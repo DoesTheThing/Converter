@@ -23,7 +23,6 @@ import java.util.concurrent.ExecutionException;
 public class MainActivity extends AppCompatActivity {
     private Spinner fromSpinner;
     private Spinner toSpinner;
-    private RadioGroup radioGrp;
     private ArrayList<ArrayAdapter<Unit>> adapters = new ArrayList<>();
 
 
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
         fromSpinner = findViewById(R.id.fromSpnr);
         toSpinner = findViewById(R.id.toSpnr);
-        radioGrp = findViewById(R.id.radioGroup);
 
         for(int i = 0; i < 3; i++)
             adapters.add(new ArrayAdapter(this, android.R.layout.simple_spinner_item));
